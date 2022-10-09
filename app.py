@@ -32,7 +32,7 @@ def predict():
     output=model.predict(final_features)[0] #reason for [0] stated in ipynb
     print(output)
     #output = round(prediction[0],2)
-    return render_template('home.html', prediction_text="Airfoil pressure is {}".format(output))
+    return render_template('home.html', prediction_texts="Airfoil pressure is {}".format(output))
         #prediction_text is a placeholder we created in HTML page we'll map it from here
 
 if __name__=="__main__":
